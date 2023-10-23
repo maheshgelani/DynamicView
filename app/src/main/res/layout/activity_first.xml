@@ -1,0 +1,35 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mycolordemo.DataViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".FirstActivity">
+
+        <EditText
+            android:id="@+id/numButtonsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the number of buttons"
+            android:inputType="number"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/generateButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numButtonsEditText"
+            android:layout_centerHorizontal="true"
+            android:text="Generate Buttons"
+            android:onClick="generateButtons" />
+
+    </RelativeLayout>
+</layout>
